@@ -7,20 +7,17 @@ $(function() {
         viewFix()
     })
 
-    $('.popap').click(function(e) {
-        e.stopImmediatePropagation()
-        e.preventDefault();
-    })
     // LOGIN
     var login = function() {
-        var loginButton = $('.register .login.item')
-        var loginForm =  loginButton.find('.login.form')
+        var loginButton = $('.register .login.item .show_popap')
+        var loginForm =  loginButton.parent().find('.login.form')
         var loginSubmitButton = loginForm.find('.force_submit')
         var loginFormReqRes = $('.login.popap #req_res')
         loginButton.click(function(e) {
             e.stopImmediatePropagation()
             e.preventDefault();
-            $(this).toggleClass('active').siblings().removeClass('active')
+            // $this = $(this).parent()
+            $(this).parent().toggleClass('active').siblings().removeClass('active')
 
             return false
         })
@@ -46,6 +43,8 @@ $(function() {
                             loginFormReqRes.removeClass().addClass('error').html('Такой пользователь уже зарегистрирован!')
                             break
                         }
+                    } else {
+                        loginFormReqRes.removeClass().addClass('error').html('Регистрация не удалась, попробуйте еще разок')
                     }
                 } else {
                     loginFormReqRes.removeClass().addClass('success').html('Регистрация прошла успешно!')
@@ -66,14 +65,14 @@ login();
 
     // SIGNIN
     var signin = function() {
-        var signinButton = $('.signin.item', '.register')
-        var signinForm = signinButton.find('.signin.form') 
+        var signinButton = $('.register .signin.item .show_popap')
+        var signinForm = signinButton.parent().find('.signin.form') 
         var signinSubmitButton = signinForm.find('.force_submit')
         var signinFormReqRes = $('.signin.popap #req_res')
         signinButton.click(function(e) {
             e.stopImmediatePropagation()
             e.preventDefault();
-            $(this).toggleClass('active').siblings().removeClass('active')
+            $(this).parent().toggleClass('active').siblings().removeClass('active')
 
             return false
         })
@@ -98,6 +97,8 @@ login();
                             signinFormReqRes.removeClass().addClass('error').html('Такой пользователь уже зарегистрирован!')
                             break
                         }
+                    } else {
+                        signinFormReqRes.removeClass().addClass('error').html('Не удалось войти, попробуйте еще разок')
                     }
                 } else {
                     signinFormReqRes.removeClass().addClass('success').html('Успешный вход!')
@@ -137,5 +138,16 @@ signin();
         left: 'auto' // Left position relative to parent in px
     };
     var target = document.getElementsByClassName('content')[0];
-    spinner = new Spinner(opts).spin(target);   
+    spinner = new Spinner(opts).spin(target); 
+
+    $(function() {
+        var myMap = {}
+        if (typeof ymaps == "undefined") {
+            spinner.stop();
+            var noMap = document.getElementById('map')
+            noMap.innerHTML = "<div class='no_internet'>Похоже, у вас проблемы с интернетом.<br> Яндекс.Карты , на которых построен этот сайт, не работают в таких условиях.</div>"
+        } else {
+            ymaps.ready(init);
+        }
+    })
 })

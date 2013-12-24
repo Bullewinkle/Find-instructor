@@ -1,4 +1,4 @@
-// require('node-monkey').start({host: "localhost", port:"3000"}); 
+require('node-monkey').start({host: "localhost", port:"3000"}); 
 var lodash = require('lodash');
 var config = require('./config');
 var express = require('express');
@@ -45,9 +45,11 @@ userSchema.path('имя').validate(function (val, res) {
 
 
 
-
 var User = mongoose.model('User', userSchema);
+// var ipg = db.users.find({"email":"developer085@gmail.com", "pass": "085321"}).limit(10)
+var idk = User.find({"email":"developer085@gmail.com", "pass": "085321"}).limit(10)
 
+console.log(idk)
 
 app.post('/login', function (req, res) {
 
@@ -73,7 +75,7 @@ app.post('/signin', function (req, res) {
 
 	var query = req.body.query;
 
-	User.create(query, function (err, data) {
+	User.find(query, function (err, data) {
 
 		if (err) {
 			res.json({success: false, msg: 'DB error', err: err});
@@ -110,7 +112,8 @@ app.post('/getall', function (req, res) {
 
 
 
-
+console.log(mongoose)
+console.log(userSchema)
 
 
 mongoose.connect(config.mongo.url, function (err) {
