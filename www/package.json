@@ -1,0 +1,8 @@
+{
+	"name": "dimon_server",
+	"dependencies": {
+		"lodash": "",
+		"express": "",
+		"mongoose": ""
+	}
+}

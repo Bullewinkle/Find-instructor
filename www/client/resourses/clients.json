@@ -1,0 +1,18 @@
+{
+	"clients": {
+		"Marina" : {
+			"profile" : "snowboard",
+			"sex" : "male",
+			"age" : 30,
+			"experience" : 10,
+			"preferred resort" : "Игора"
+		},
+		"Denis" : {
+			"profile" : "ski",
+			"sex" : "male",
+			"age" : 32,
+			"experience" : 10,
+			"preferred resort" : "Охта парк"
+		}
+	}
+}

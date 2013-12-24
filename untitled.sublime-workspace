@@ -1,0 +1,1576 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"fade",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"di",
+				"d-i	display: inline;"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"clear",
+				"clearTimeout"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"sub",
+				"sub_menu"
+			],
+			[
+				"item",
+				"item_click"
+			],
+			[
+				"mouse",
+				"mouseleave"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"mou",
+				"mouseleave"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"tou",
+				"touchstart"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"mous",
+				"mouseout"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"c-p",
+				"cur-p	cursor: pointer;"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"change",
+				"changeType"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"length",
+				"length"
+			],
+			[
+				"files",
+				"getFileStatus"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"cl",
+				"cl-n	clear: none;"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"tal",
+				"tal-l	text-align-last: left;"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"fos",
+				"font-size"
+			],
+			[
+				"brdr",
+				"border-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"jQ",
+				"jQuery"
+			],
+			[
+				"ap",
+				"append	.append"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"not",
+				"notmain"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"l",
+				"lowercase"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"Z",
+				"z-index"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"blur",
+				"blurReady"
+			],
+			[
+				"app",
+				"appendTo	.appendTo()"
+			],
+			[
+				"un",
+				"unbind	.unbind()"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"to",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"fot",
+				"font-style"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"at",
+				"attr	.attr() - multiple"
+			],
+			[
+				"html",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"wid",
+				"widget"
+			],
+			[
+				"ready",
+				"ready	$(document).ready"
+			],
+			[
+				"borde",
+				"border-right"
+			],
+			[
+				"brd",
+				"border-radius"
+			],
+			[
+				"bordr",
+				"border-radius"
+			],
+			[
+				"fb",
+				"fw-b	font-weight: bold;"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"bg",
+				"background"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"12px",
+				"12px"
+			],
+			[
+				"appen",
+				"appendTo	.appendTo()"
+			],
+			[
+				"wi",
+				"width	.width"
+			],
+			[
+				"appe",
+				"appendTo	.appendTo()"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"res",
+				"resize	.resize"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"th",
+				"this	$(this)"
+			],
+			[
+				"user",
+				"userName"
+			],
+			[
+				"use",
+				"userName"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"brr",
+				"border-radius"
+			],
+			[
+				"c",
+				"click	click"
+			],
+			[
+				"has",
+				"hasClass	.hasClass"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"bdb",
+				"border-bottom"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"ge",
+				"getElementsByClassName"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"rea",
+				"ready	jQuery(document).ready"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"ajax",
+				"ajaxSettings"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"utf",
+				"utf-8"
+			],
+			[
+				"char",
+				"charset"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"r",
+				"ready	$(document).ready"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"MA",
+				"margin"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"ind",
+				"indexOfLastSlash"
+			],
+			[
+				"menu",
+				"menuText"
+			],
+			[
+				"plugi",
+				"plugin	plugin (method basic)"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"bx",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"s",
+				"submit"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"tra",
+				"tractor-nomber"
+			],
+			[
+				"input",
+				"input"
+			],
+			[
+				"bott",
+				"bottom"
+			],
+			[
+				"repe",
+				"repeat-x"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"fiels",
+				"fields_left"
+			],
+			[
+				"fl",
+				"fl-l	float: left;"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"no",
+				"no-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!doctype html>\n<html lang=\"en\">\n\n<head>\n    <title>Примеры. Список объектов карты.</title>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <script src=\"js/spin.min.js\"></script>\n    <script src=\"http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU&mode=debug\" type=\"text/javascript\"></script>\n    <script src=\"http://yandex.st/jquery/1.6.4/jquery.min.js\" type=\"text/javascript\"></script>\n    <script src=\"js/groups.js\" type=\"text/javascript\"></script>\n    <link rel=\"stylesheet\" href=\"normalize.css\">\n    <link rel=\"stylesheet\" href=\"style.css\">\n    <script src=\"js/initmap.js\" ></script>\n</head>\n\n<body>\n    <header class=\"header\">\n\n        <nav class=\"main-menu cf\">\n            <ul class=\"main-menu-ul\">\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Главная</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Инструктора</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Клиенты</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Курорты</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Акции на курортах</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Форум</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">О проекте</a></li>\n                <li class=\"item\"><a href=\"#\" class=\"item-link\">Контакты</a></li>\n            </ul>\n        </nav>\n    </header>\n    <div class=\"content\">\n        <div id=\"map\"></div>\n        <!-- <div class=\"loader\"><img src=\"loader.gif\"></div> -->\n    </div>\n    <footer class=\"footer\">Copyright 2013 ©</footer>\n</body>\n<script src=\"js/ready.js\"></script>\n</html>\n",
+			"file": "www/index.html",
+			"file_size": 1779,
+			"file_write_time": 130314609230000000,
+			"settings":
+			{
+				"buffer_size": 1684,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/style.css",
+			"settings":
+			{
+				"buffer_size": 1940,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// TODO\n// Добавить кнопку возврата в исходное положение ( центр карты и масштаб )\n// Поправить кнопку определения местаположения \n\nymaps.ready(init);\n\nfunction init() {\n    spinner.stop();\n\n    var hostName = 'http://' + window.location.host + '/'\n    // center botton\n    var centerBtn = $('<botton class=\"center-btn\">Выставить как было!</botton>');\n    $('#map').append(centerBtn);\n    $('#map .center-btn').click(function() {\n        myMap.setBounds(myMap.geoObjects.getBounds());\n    })\n\n    var baseImageURL = '/img/';\n\n    var center = {};\n    // END center botton\n\n    /**\n     * Класс кнопки определения местоположения пользователя.\n     * с помощью Geolocation API.\n     * @see http://www.w3.org/TR/geolocation-API/\n     * @class\n     * @name GeolocationButton\n     * @param {Object} params Данные для кнопки и параметры к Geolocation API.\n     */\n    function GeolocationButton (params) {\n        GeolocationButton.superclass.constructor.call(this, params);\n\n        // Расширяем опции по умолчанию теми, что передали в конструкторе.\n        this.geoLocationOptions = ymaps.util.extend({\n            // Не центрировать карту.\n            noCentering: true,\n            // Не ставить метку.\n            noPlacemark: false,\n            // Не показывать точность определения местоположения.\n            noAccuracy: false,\n            // Режим получения наиболее точных данных.\n            enableHighAccuracy: true,\n            // Максимальное время ожидания ответа (в миллисекундах).\n            timeout: 10000,\n            // Максимальное время жизни полученных данных (в миллисекундах).\n            maximumAge: 1000\n        }, params.options);\n    }\n    // Вот такую метку бы ставить на карту без центрирования\n    \n    // myMap.geoObjects.add(\n    //     new ymaps.Placemark(\n    //         [ymaps.geolocation.latitude, ymaps.geolocation.longitude],\n    //         {\n    //             balloonContentHeader: ymaps.geolocation.country,\n    //             balloonContent: ymaps.geolocation.city,\n    //             balloonContentFooter: ymaps.geolocation.region\n    //         }\n    //     )\n    // );\n    ymaps.util.augment(GeolocationButton, ymaps.control.Button, {\n        /**\n         * Метод будет вызван при добавлении кнопки на карту.\n         * @function\n         * @name GeolocationButton.onAddToMap\n         * @param {ymaps.Map} map Карта на которую добавляется кнопка.\n         */\n        onAddToMap: function () {\n            GeolocationButton.superclass.onAddToMap.apply(this, arguments);\n\n            ymaps.option.presetStorage.add('geolocation#icon', {\n                iconImageHref: 'man.png',\n                iconImageSize: [100, 100>],\n                iconImageOffset: [0, -24]\n            });\n\n            this.hint = new GeolocationButtonHint(this);\n            // Обрабатываем клик на кнопке.\n            this.events.add('click', this.onGeolocationButtonClick, this);\n        },\n        /**\n         * Метод будет вызван при удалении кнопки с карты.\n         * @function\n         * @name GeolocationButton.onRemoveFromMap\n         * @param {ymaps.Map} map Карта с которой удаляется кнопка.\n         */\n        onRemoveFromMap: function () {\n            this.events.remove('click', this.onGeolocationButtonClick, this);\n            this.hint = null;\n            ymaps.option.presetStorage.remove('geolocation#icon');\n\n            GeolocationButton.superclass.onRemoveFromMap.apply(this, arguments);\n        },\n        /**\n         * Обработчик клика на кнопке.\n         * @function\n         * @private\n         * @name GeolocationButton.onGeolocationButtonClick\n         * @param {ymaps.Event} e Объект события.\n         */\n        onGeolocationButtonClick: function (e) {\n            // Меняем иконку кнопки на прелоадер.\n            this.toggleIconImage('loader.gif');\n\n            // Делаем кнопку ненажатой\n            if (this.isSelected()) {\n                this.deselect();\n            }\n\n            if (navigator.geolocation) {\n                // Запрашиваем текущие координаты устройства.\n                navigator.geolocation.getCurrentPosition(\n                    ymaps.util.bind(this._onGeolocationSuccess, this),\n                    ymaps.util.bind(this._onGeolocationError, this),\n                    this.geoLocationOptions\n                );\n            }\n            else {\n                this.handleGeolocationError('Ваш броузер не поддерживает GeolocationAPI.');\n            }\n        },\n        /**\n         * Обработчик успешного завершения геолокации.\n         * @function\n         * @private\n         * @name GeolocationButton._onGeolocationSuccess\n         * @param {Object} position Объект, описывающий текущее местоположение.\n         */\n        _onGeolocationSuccess: function (position) {\n            this.handleGeolocationResult(position);\n            // Меняем иконку кнопки обратно\n            this.toggleIconImage('wifi.png');\n        },\n        /**\n         * Обработчик ошибки геолокации.\n         * @function\n         * @name GeolocationButton._onGeolocationError\n         * @param {Object} error Описание причины ошибки.\n         */\n        _onGeolocationError: function (error) {\n            this.handleGeolocationError('Точное местоположение определить не удалось.');\n            // Меняем иконку кнопки обратно.\n            this.toggleIconImage('wifi.png');\n\n            if (console) {\n                console.warn('GeolocationError: ' + GeolocationButton.ERRORS[error.code - 1]);\n            }\n        },\n        /**\n         * Обработка ошибки геолокации.\n         * @function\n         * @name GeolocationButton.handleGeolocationError\n         * @param {Object|String} err Описание ошибки.\n         */\n        handleGeolocationError: function (err) {\n            this.hint\n                .show(err.toString())\n                .hide(2000);\n        },\n        /**\n         * Меняет иконку кнопки.\n         * @function\n         * @name GeolocationButton.toggleIconImage\n         * @param {String} image Путь до изображения.\n         */\n        toggleIconImage: function (image) {\n            this.data.set('image', baseImageURL + image);\n        },\n        /**\n         * Обработка результата геолокации.\n         * @function\n         * @name GeolocationButton.handleGeolocationResult\n         * @param {Object} position Результат геолокации.\n         */\n        handleGeolocationResult: function (position) {\n            var location = [position.coords.latitude, position.coords.longitude],\n                accuracy = position.coords.accuracy,\n                map = this.getMap(),\n                options = this.geoLocationOptions,\n                placemark = this._placemark,\n                circle = this._circle;\n\n            // Смена центра карты (если нужно)\n            if (!options.noCentering) {\n                map.setCenter(location, 15);\n            }\n\n            // Установка метки по координатам местоположения (если нужно).\n            if (!options.noPlacemark) {\n                // Удаляем старую метку.\n                if (placemark) {\n                    map.geoObjects.remove(placemark);\n                }\n                this._placemark = placemark = new ymaps.Placemark(location, {}, { preset: 'twirl#redIcon' });\n                map.geoObjects.add(placemark);\n                // Показываем адрес местоположения в хинте метки.\n                this.getLocationInfo(placemark);\n            }\n\n            // Показываем точность определения местоположения (если нужно).\n            if (!options.noAccuracy) {\n                // Удаляем старую точность.\n                if (circle) {\n                    map.geoObjects.remove(circle);\n                }\n                this._circle = circle = new ymaps.Circle([location, accuracy], {}, { opacity: 0.5 });\n                map.geoObjects.add(circle);\n            }\n        },\n        /**\n         * Получение адреса по координатам метки.\n         * @function\n         * @name GeolocationButton.getLocationInfo\n         * @param {ymaps.Placemark} point Метка для которой ищем адрес.\n         */\n        getLocationInfo: function (point) {\n            ymaps.geocode(point.geometry.getCoordinates())\n                .then(function (res) {\n                    var result = res.geoObjects.get(0);\n\n                    if (result) {\n                        point.properties.set('hintContent', result.properties.get('name'));\n                    }\n                });\n        }\n    });\n\n    /**\n     * Человекопонятное описание кодов ошибок.\n     * @static\n     */\n    GeolocationButton.ERRORS = [\n        'permission denied',\n        'position unavailable',\n        'timeout'\n    ];\n\n    /**\n     * Класс хинта кнопки геолокации, будем использовать для отображения ошибок.\n     * @class\n     * @name GeolocationButtonHint\n     * @param {GeolocationButton} btn Экземпляр класса кнопки.\n     */\n    function GeolocationButtonHint (btn) {\n        var map = btn.getMap(),\n        // Позиция кнопки.\n            position = btn.options.get('position');\n\n        this._map = map;\n        // Отодвинем от кнопки на 35px.\n        this._position = [position.left + 35, position.top];\n    }\n\n    /**\n     * Отображает хинт справа от кнопки.\n     * @function\n     * @name GeolocationButtonHint.show\n     * @param {String} text\n     * @returns {GeolocationButtonHint}\n     */\n    GeolocationButtonHint.prototype.show = function (text) {\n        var map = this._map,\n            globalPixels = map.converter.pageToGlobal(this._position),\n            position = map.options.get('projection').fromGlobalPixels(globalPixels, map.getZoom());\n\n        this._hint = map.hint.show(position, text);\n\n        return this;\n    };\n    /**\n     * Прячет хинт с нужной задержкой.\n     * @function\n     * @name GeolocationButtonHint.hide\n     * @param {Number} timeout Задержка в миллисекундах.\n     * @returns {GeolocationButtonHint}\n     */\n    GeolocationButtonHint.prototype.hide = function (timeout) {\n        var hint = this._hint;\n\n        if (hint) {\n            setTimeout(function () {\n                hint.hide();\n            }, timeout);\n        }\n\n        return this;\n    };\n\n\n\n\n    // Создание экземпляра карты.\n    var myMap = new ymaps.Map('map', {\n        center: [59.95, 30.316667],\n        zoom: 14,\n        type: 'yandex#publicMap',\n        behaviors: ['default']\n    }),\n        // Контейнер для меню.\n        menu = $('<ul class=\"menu\"/>');\n        var myButton = new GeolocationButton({\n            data: {\n                image: baseImageURL + 'wifi.png',\n                title: 'Определить местоположение'\n            },\n            options: {\n                // Режим получения наиболее точных данных.\n                enableHighAccuracy: true\n            }\n        });\n        console.log(myMap)\n        myMap.container.fitToViewport();\n\n\n        // BALOON\n\n        // END BALOON\n\n\n    // Перебираем все группы.\n    groups.forEach(function (group) {\n        // Пункт меню.\n        var menuItem = $('<li><a href=\"#\">' + group.name + '</a></li>'),\n            // Коллекция для геообъектов группы.\n            collection = new ymaps.GeoObjectCollection(null, { preset: group.style }),\n            // Контейнер для подменю.\n            submenu = $('<ul class=\"submenu\"/>');\n\n        // Добавляем коллекцию на карту.\n        myMap.geoObjects.add(collection);\n\n        // Добавляем подменю.\n        menuItem\n        .append(submenu)\n            // Добавляем пункт в меню.\n            .appendTo(menu)\n            // По клику удаляем/добавляем коллекцию на карту и скрываем/отображаем подменю.\n            .find('a')\n            .toggle(function () {\n                myMap.geoObjects.remove(collection);\n                submenu.hide();\n            }, function () {\n                myMap.geoObjects.add(collection);\n                submenu.show();\n            });\n\n        // Перебираем элементы группы.\n        group.items.forEach(function (item) {\n            // Пункт подменю.\n            var submenuItem = $('<li><a href=\"#\">' + item.name + '</a></li>'),\n            // Создаем метку.\n            placemark = new ymaps.Placemark(item.cords, { \n                iconContent: item.iconContent,\n                hintContent: item.hintContent,\n                balloonContent: item.balloonContent\n            },{\n                preset: group.style\n            });\n\n            placemark.events.add('balloonopen', function(e) {\n                console.log(e)\n                placemark.properties.set('balloonContent', \"Идет загрузка данных...\")\n\n                    var result = '';\n                    $.ajax({\n                        url: '/instructors.json',\n                        success: function(data) {\n                            console.log('success')\n                            console.log(data.instructors)\n                            for (instructor in data.instructors) {\n                                console.log( data.instructors[instructor])\n                                result += '<div><a href=\"/' + instructor + '\">' + instructor + '</a><ul>'\n                                for ( prop in data.instructors[instructor] ) {\n                                    result += '<li>' + prop + ': ' + data.instructors[instructor][prop] + '</li>'\n                                }\n                                result += '</ul></div>'\n                            }\n                            placemark.properties.set('balloonContent', result);\n                        },\n                        error: function() {\n                            console.log('error')\n                        }\n                    })\n\n\n            })\n\n            // Добавляем метку в коллекцию.\n            collection.add(placemark);\n            // Добавляем пункт в подменю.\n            submenuItem\n            .appendTo(submenu)\n                // При клике по пункту подменю открываем/закрываем баллун у метки.\n                .find('a')\n                .toggle(function () {\n                    placemark.balloon.open();\n                }, function () {\n                    placemark.balloon.close();\n                });\n            });\n    });\n\n    // Добавляем меню в тэг BODY.\n    menu.appendTo($('body > .content'));\n    // Выставляем масштаб карты чтобы были видны все группы.\n    myMap.setBounds(myMap.geoObjects.getBounds());\n\n     (function initControls () {\n            var myListBox = new ymaps.control.ListBox({\n                  data: {\n                    title: 'Выбрать город'\n                },\n                items: [\n                    new ymaps.control.ListBoxItem('Москва'),\n                    new ymaps.control.ListBoxItem('Новосибирск'),\n                    new ymaps.control.ListBoxSeparator(),\n                    new ymaps.control.ListBoxItem('Нью-Йорк')\n                ]\n            });\n            myMap.controls.add('mapTools');\n            myMap.controls.add('zoomControl');\n            myMap.controls.add('routeEditor');\n            // myMap.controls.add('searchControl'); создать пользовательский шаблон\n            myMap.controls.add(myListBox);\n            myMap.controls.add(myButton, {top: 5, left: 5});\n        })()\n}",
+			"file": "www/js/initmap.js",
+			"file_size": 17306,
+			"file_write_time": 130321127340000000,
+			"settings":
+			{
+				"buffer_size": 15077,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	\"clients\": {\n		\"Marina\" : {\n			\"profile\" : \"snowboard\",\n			\"sex\" : \"male\",\n			\"age\" : 30,\n			\"experience\" : 10,\n			\"preferred resort\" : \"Игора\"\n		},\n		\"Denis\" : {\n			\"profile\" : \"ski\",\n			\"sex\" : \"male\",\n			\"age\" : 32,\n			\"experience\" : 10,\n			\"preferred resort\" : \"Охта парк\"\n		}\n	}\n}",
+			"file": "clients.json",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 288,
+				"line_ending": "Unix",
+				"name": "var users = {"
+			}
+		},
+		{
+			"contents": "{\n	\"instructors\" : {\n		\"Shaun White\": {			\n			\"profile\" : \"snowboard\",\n			\"sex\" : \"male\",\n			\"age\" : 39,\n			\"experience\" : 14,\n			\"preferred resort\" : \"Игора\"\n		},\n		\"Seth Wescott\": {			\n			\"profile\" : \"ski\",\n			\"sex\" : \"male\",\n			\"age\" : 31,\n			\"experience\" : 18,\n			\"preferred resort\" : \"Охта парк\"\n		},\n		\"jakob dog\": {			\n			\"profile\" : \"snowboard\",\n			\"sex\" : \"male\",\n			\"age\" : 30,\n			\"experience\" : 10,\n			\"preferred resort\" : \"Игора\"\n		},\n		\"Tanja Frieden\": {			\n			\"profile\" : \"ski\",\n			\"sex\" : \"male\",\n			\"age\" : 22,\n			\"experience\" : 8,\n			\"preferred resort\" : \"Охта парк\"\n		}\n	}\n}",
+			"file": "instructors.json",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 592,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// Группы объектов\nvar groups = [\n{\n	name: \"Курорты Лен. Области\",\n	style: \"twirl#redStretchyIcon\",\n	items: [\n	{\n		name: \"Игора\",\n		cords: [60.51133, 30.20636],\n		iconContent: 'Игора',\n		balloonContent: 'Игора - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Северный\",\n		cords: [60.15712279, 30.54836592],\n		iconContent: 'Северный',\n		balloonContent: 'Северный - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Кавголово\",\n		cords: [60.18105290, 30.53856800],\n		iconContent: 'Кавголово',\n		balloonContent: 'Кавголово - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Пухтолова\",\n		cords: [60.23228128, 29.68496760],\n		iconContent: 'Пухтолова',\n		balloonContent: 'Пухтолова гора - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Охта\",\n		cords: [60.12699459, 30.44429911],\n		iconContent: 'Охта',\n		balloonContent: 'Охта Пакр - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Зол. Дол.\",\n		cords: [60.52825433, 29.76675335],\n		iconContent: 'Зол. Дол.',\n		balloonContent: 'Золотая Долина - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Снежный\",\n		cords: [60.52649872, 29.77546153],\n		iconContent: 'Снежный',\n		balloonContent: 'Снежный - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Туутари парк\",\n		cords: [59.69726361, 30.19584016],\n		iconContent: 'Туутари парк',\n		balloonContent: 'Туутари парк - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Красное озеро\",\n		cords: [60.53477608, 29.74073908],\n		iconContent: 'Красное озеро',\n		balloonContent: 'Красное озеро - описание',\n		hintContent: 'что - то',\n	},\n	]\n},\n{\n	name: \"Покушайки\",\n	style: \"twirl#greenStretchyIcon\",\n	items: [\n	{\n		name: \"Ресторан &quot;Калинка-Малинка&quot;\",\n		cords: [59.50955, 30.60791],\n		iconContent: 'Магаз1',\n		balloonContent: 'Магаз1 - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Бар &quot;Сало-бар&quot;\",\n		cords: [59.429083, 30.521708],\n		iconContent: 'Магаз2',\n		balloonContent: 'Магаз2 - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Абсент-бар &quot;Палата №6&quot;\",\n		cords: [59.450843, 30.498271],\n		iconContent: 'Магаз3',\n		balloonContent: 'Магаз3 - описание',\n		hintContent: 'что - то',\n	},\n	{\n		name: \"Ресторан &quot;Спотыкач&quot;\",\n		cords: [59.454834, 30.516498],\n		iconContent: 'Магаз4',\n		balloonContent: 'Магаз4 - описание',\n		hintContent: 'что - то',\n	}\n	]\n}\n];",
+			"file": "groups.js",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 2332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/ready.js",
+			"settings":
+			{
+				"buffer_size": 1281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/server.js",
+			"settings":
+			{
+				"buffer_size": 254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	\"Hello\" : \"Привет\"\n}",
+			"file": "www/lang.json",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/user/index.js",
+			"settings":
+			{
+				"buffer_size": 455,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jad",
+				"Set Syntax: Jade"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"ht",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"for",
+				"Format Code"
+			],
+			[
+				"Code",
+				"Format Code"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"copy",
+				"File: Copy as Tag a"
+			],
+			[
+				"cop",
+				"File: Copy Name Encoded"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"rmp",
+				"Package Control: Remove Package"
+			],
+			[
+				"html	",
+				"Set Syntax: HTML5"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"ssp",
+				"Set Syntax: PHP"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 294.0,
+		"history":
+		[
+			"string",
+			"a",
+			"while",
+			"do",
+			"var",
+			"a",
+			"a='node'",
+			"'node'",
+			"node.js",
+			"node",
+			"console.log()",
+			"console",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Bullewinkle/Web_progects/IS/index.html",
+		"/Users/Bullewinkle/Dropbox/Bullwinkle`s/Б.К.txt",
+		"/Users/Bullewinkle/Web_progects/IS/www/user.js",
+		"/Users/Bullewinkle/Web_progects/IS/Shaun%20White.html",
+		"/Users/Bullewinkle/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Bullewinkle/Web_progects/IS/style.css",
+		"/Users/Bullewinkle/Web_progects/IS/www/sftp-config.json",
+		"/var/folders/s4/0fvy7mvd039cx61qfgsp5qxh0000gn/T/sublime-sftp-browse-1386968767/mapped/var/www/new-layer.ru/new-layer/.git/index",
+		"/var/folders/s4/0fvy7mvd039cx61qfgsp5qxh0000gn/T/sublime-sftp-browse-1386968729/mapped/var/www/gittest/index.html",
+		"/var/folders/s4/0fvy7mvd039cx61qfgsp5qxh0000gn/T/sublime-sftp-browse-1386968683/mapped/var/www/nohup.out",
+		"/Users/Bullewinkle/Web_progects/IS/sftp-config.json",
+		"/Users/Bullewinkle/Web_progects/IS/points.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/portfolio/content.php",
+		"/Users/Bullewinkle/Desktop/Тон 8, ВАШАК",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/objects/informer.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.universal_submenu.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/content.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/j.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/footer.php",
+		"/Users/Bullewinkle/index.html",
+		"/Users/Bullewinkle/Dropbox/Bullwinkle`s/bull.zip",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/jquery.galleriffic.js",
+		"/Users/Bullewinkle/Dropbox/Bullwinkle`s/bull-1/bull/Б.К.txt",
+		"/Volumes/bull/Б.К.txt",
+		"/Users/Bullewinkle/Downloads/www/www/main.html",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/galleriffic-2.0/galleriffic-2.0/example-1.html",
+		"/Users/Bullewinkle/Web_progects/bizbi/bizbi/src/main.jade",
+		"/Volumes/HDD/Users/Bullwinkle/Desktop/harp-start.txt",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/portfolio/content.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/sftp-config.json",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/content.php(portfolio).php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/save/content.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/competitions/index.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/style/elements.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.upload_file.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/upload_controller/upload_handler.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/object.add/.default/upload.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/add_page.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/object.add/.default/template.php",
+		"/Volumes/HDD/Users/Bullwinkle/homebrew/Library/Homebrew/macos/xcode.rb",
+		"/Users/Bullewinkle/.gitconfig",
+		"/Users/Bullewinkle/.hgignore_global",
+		"/Users/Bullewinkle/.gitignore_global",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/upload_controller/uploads/1962-ferrari-250-gto-8.jpg",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_add/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.delete_comment.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_reg/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/style/elements.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_add/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/reg.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/sftp-config.json",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/components/arxip3/object.add/component.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/modules/sale/ru/delivery/cpcr/cities.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/feedback/.default/template.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip_empty/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_user_page/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_reg/header.php",
+		"/Volumes/Unreal Tournament 2004/Unreal Tournament 2004/UT2004_EULA.txt",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new2/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new2/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new3/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/users-new3/ready.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/auth.registration/.default/template.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/user.profile/.default/template.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/Копия dev3.arxip.ru 2/bitrix/templates/arxip3_reg/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/Копия dev3.arxip.ru 2/bitrix/templates/.default/components/arxip3/auth.registration/.default/template.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/Копия dev3.arxip.ru 2/bitrix/templates/.default/js/reg.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.autocomplete.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_reg/template_styles.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/components/arxip3/auth.registration/.default/template.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/reg.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/components/arxip3/auth.authorization/component.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.ar_select_base.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/.git/MERGE_HEAD",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.ar_select_autocomplete.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.check_form.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.city_select.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.chosen.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/arxip3_reg/header.php",
+		"/var/folders/s4/0fvy7mvd039cx61qfgsp5qxh0000gn/T/sublime-sftp-browse-1384176282/mapped/userpage/users-new2/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/resizer.js",
+		"/Users/Bullewinkle/Desktop/доступы.txt",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/footer.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/masonry.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/resizer.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/header.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/sftp-config.json",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.upload_file.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/content.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/content.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/base.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/todo.txt",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins/jquery.arxip.main_content_blocks.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/resizer.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/fonts/style.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/history.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/history.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/history.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/lib/history.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/modules/arxip3/classes/general/renderers/UserListRenderer.class.php",
+		"/Users/Bullewinkle/Web_progects/allforbox/simpla/.htaccess",
+		"/Users/Bullewinkle/Library/Caches/Cleanup At Startup/Transmit/CD5C5B5C-8460-4062-989D-B4656638C94B/password.php",
+		"/Users/Bullewinkle/Library/Caches/Cleanup At Startup/Transmit/CA4EB383-8638-45B5-81A3-FBA443262C3C/config.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/HTML5-History-API/README.md",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/HTML5-History-API/history.js",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/local/HTML5-History-API/readme.ru.txt",
+		"/Users/Bullewinkle/Library/Caches/Cleanup At Startup/Transmit/291CFEA7-15CD-49DD-9E32-76548E7F6804/config.php",
+		"/Users/Bullewinkle/Library/Caches/Cleanup At Startup/Transmit/00E7B1C6-2D1A-4016-973E-AB2F14D37163/index.html",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new2/fonts/stylesheet.css",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/portfolio/index.php",
+		"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new/subscriptions/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/dev3.arxip.ru",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix/templates/.default/js/jquery_plugins",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/bitrix",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new",
+			"",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3/",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new3",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/u",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru/users-new",
+			"/Users/Bullewinkle/Web_progects/arxip.ru/dev3.arxip.ru",
+			"/Users/Bullewinkle/Web_progects/arxip/dev3.arxip.ru",
+			"/Users/Bullwinkle/Web_progects/arxip/dev3.arxip.ru",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/themes/yoo_master_wp",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/themes/yoo_master_wp",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/plugins/woocommerce",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/plugins/ml-slider",
+			"/Users/Bullwinkle/Web_progects/nature_land/www/wp-content/themes/yoo_master_wp",
+			"<open files>",
+			"",
+			"/Users/Bullwinkle/Web_progects/icebus/wp-content",
+			"",
+			"blur",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"toggleIconImage",
+			"baseImageURL",
+			"handleGeolocationResult",
+			"ymaps.geolocation",
+			"handleGeolocationResult",
+			".js",
+			"iconContent",
+			"cords",
+			"preset: 'twirl#violetIcon'",
+			"hintContent",
+			"res",
+			"'",
+			"name",
+			"sfvsdv",
+			"balloonContent",
+			"iconContent",
+			"center",
+			"},",
+			"preset",
+			"iconContent",
+			"name",
+			"myMap",
+			"#yandexMap",
+			"]},",
+			"myMap",
+			"в29",
+			"svsvsdfvsdfv",
+			"// preset: 'twirl#violetIcon'",
+			"my-button",
+			"myMap",
+			"Игора",
+			"igora",
+			"Игора",
+			"igora",
+			"Игора",
+			"igora",
+			"Игора",
+			"igora",
+			"Игора",
+			"igora",
+			"myPlacemark1",
+			"myMap",
+			"100",
+			"100%",
+			"myMap",
+			".cf",
+			"start_following",
+			"header_in",
+			"add",
+			"test",
+			"главная",
+			"</article>",
+			"$(this)",
+			"currentLink",
+			"e.state",
+			"typeof $('#main_objects')",
+			"reinitMasonry",
+			"initMasonry",
+			".initMasonry",
+			"initMasonry",
+			"reinitMasonry",
+			"currentLink",
+			"windowHistory",
+			"history",
+			"page",
+			"uf/88f/88f7d0a4d5683ef7a0ed22806d1465e0.jpg",
+			"88f7d0a4d5683ef7a0ed22806d1465e0.jpg",
+			"/upload/uf/e2d/e2d4583013d03bf45df6936a27a9e675.jpg",
+			"/upload/uf/9d4/9d42a5417326b13a22804ddda55790a4.jpg",
+			"/upload/uf/e2d/e2d4583013d03bf45df6936a27a9e675.jpg",
+			"body",
+			"supscribe",
+			"auto",
+			".content",
+			"юcontent",
+			"content",
+			"reinitMasonry",
+			"mainWrapper",
+			"tooltips",
+			"infoBlock",
+			"icons",
+			"case",
+			"infoList.toggle()",
+			"case",
+			"if",
+			".show().siblings().hide();",
+			"if ( infoList.find(",
+			"infoList.hide()",
+			".is(':visible')",
+			"infoList.hide()",
+			"console.log",
+			"console.log(infoList.find('.",
+			":visible'))",
+			"infoList.show()",
+			".is(':visible')",
+			"toggle()",
+			"informer",
+			"Informer",
+			"unbind",
+			"$.data( this, 'plugin_universal_submenu', new UniversalSubmenu( this, options ) );",
+			"function ( options ) {\n        return this.each(function () {\n\n            if ( !$.data( this, 'plugin_universal_submenu' ) ) {\n                $.data( this, 'plugin_universal_submenu', new UniversalSubmenu( this, options ) );\n            }\n\n        });\n    } ",
+			".add",
+			"add",
+			"unbind",
+			"add",
+			"новости",
+			"Главная",
+			"userBlock",
+			"menuItem",
+			"item_click",
+			"sub",
+			"ss-controls",
+			"> <",
+			".add",
+			"add",
+			"img_block",
+			"gallery",
+			"empty",
+			"main_description",
+			"<div class=\"sub_menu\">\n								<div class=\"sub_menu_in\">\n									<ul>",
+			"<div class=\"sub_menu_in\">",
+			"<div class=\"sub_menu_in\">\n									<ul>\n										<li><a href=\"/people/architecture/\">Люди</a></li>\n										<li><a href=\"/projects/architecture/\">Портфолио</a></li>\n										<li><a href=\"/vacancies/architecture/\">Вакансии</a></li>\n										<li><a href=\"/events/architecture/\">Мероприятия</a></li>\n										<li><a href=\"/contests/architecture/\">Конкурсы</a></li>\n										<li><a href=\"/tenders/architecture/\">Заказы</a></li>\n									</ul>\n									<div class=\"bg\"></div>\n								</div>",
+			"href=\"http",
+			"previous",
+			"inline",
+			"block",
+			"float: left;",
+			"Description"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"require($_SERVER[\"DOCUMENT_ROOT\"].\"/users-new/",
+			"hello",
+			"; ",
+			"blue",
+			"4px",
+			"0",
+			"</div>\n					<!-- Indicators -->\n					<ol class=\"carousel-indicators\">\n						<li data-target=\"#carousel-example-generic\" data-slide-to=\"0\" class=\"active\"></li>\n						<li data-target=\"#carousel-example-generic\" data-slide-to=\"1\"></li>\n						<li data-target=\"#carousel-example-generic\" data-slide-to=\"2\"></li>\n					</ol>\n			</div>",
+			";}",
+			"<div class=\"phone\">\n					<span>тел.: </span>8(812) 985-08-46 <br>\n					<span>тел. / факс: </span>8(812) 517-78-34\n				</div>",
+			"div.phone",
+			"</body>",
+			"<div id=\"lmenu\"></div>",
+			"span",
+			"float: left;",
+			"float:left;",
+			"15px"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1728,
+								1728
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/js/initmap.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2660,
+								2660
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 809.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "clients.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								279
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var users = {",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "instructors.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "groups.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1767,
+								1767
+							],
+							[
+								1934,
+								1934
+							],
+							[
+								2109,
+								2109
+							],
+							[
+								2281,
+								2281
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "www/js/ready.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "www/server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "www/lang.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "www/user/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.955673758865,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 950.0
+	},
+	"output.sftp":
+	{
+		"height": 79.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 701.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Web_progects/arxip.ru/arxip.sublime-project"
+			]
+		],
+		"width": 1280.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
