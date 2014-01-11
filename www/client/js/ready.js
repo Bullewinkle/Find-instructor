@@ -290,7 +290,7 @@ var usserPhotoDropzone = new Dropzone(drop, {
 	dictCancelUploadConfirmation : 'НЕОБХОДИМО ВПИСАТЬ ТЕКСТ! 8',
 	dictRemoveFile : 'НЕОБХОДИМО ВПИСАТЬ ТЕКСТ! 9',
 	dictMaxFilesExceeded : 'НЕОБХОДИМО ВПИСАТЬ ТЕКСТ! 10',
-	forceFallback: true,
+	forceFallback: false,
 	fallback: function(e) {
 
 // TODO ПРИДУМАТЬ КАК ВЗЯТЬ ПОЛУЧИВШИЙСЯ НА СЕРВЕРЕ SRC КАРТИНКИ!!!
@@ -324,7 +324,7 @@ var usserPhotoDropzone = new Dropzone(drop, {
 });
 
 if (typeof usserPhotoDropzone.disable === 'function') {
-	usserPhotoDropzone.disable();
+	// usserPhotoDropzone.disable();
 }
 
 // END DROPZONE OPTIONS
