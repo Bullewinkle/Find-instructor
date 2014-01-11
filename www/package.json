@@ -1,8 +1,20 @@
 {
 	"name": "dimon_server",
+	"description": "hello world test app",
+	"version": "0.0.1",
 	"dependencies": {
 		"lodash": "",
 		"express": "",
-		"mongoose": ""
-	}
+		"mongoose": "",
+		"connect-mongo": "",
+		"pwd": "",
+		"imagemagick": ""
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"main": "config.js",
+	"devDependencies": {},
+	"author": "",
+	"license": "BSD-2-Clause"
 }

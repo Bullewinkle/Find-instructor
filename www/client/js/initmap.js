@@ -1,6 +1,3 @@
-
-// TODO
-
 function init() {
 	// Создание экземпляра карты.
 	myMap = new ymaps.Map('map', {
@@ -10,8 +7,7 @@ function init() {
 		behaviors: ['default']
 	})
 	spinner.stop();
-	$('.ymaps-map.ymaps-i-ua_js_yes', '#map')
-	.ready(function () {
+	$('.ymaps-map.ymaps-i-ua_js_yes', '#map').ready(function () {
 		setTimeout(function () {
 			myMap.center = myMap.getCenter();
 			myMap.zoom = myMap.getZoom();
@@ -19,18 +15,13 @@ function init() {
 			.addClass('visible')
 		}, 300);
 	})
-	// Контейнер для меню.
-	var menu = $('<ul class="menu"/>');
-	console.log(myMap)
+
 	myMap.container.fitToViewport();
 	var hostName = 'http://' + window.location.host + '/'
 	var baseImageURL = 'img/';
 	var bindOperators = function () {
-		$(document)
-		.delegate('.instructors_dropdown .js_showSubmenu', 'click', function (e) {
+		$(document).delegate('.instructors_dropdown .js_showSubmenu', 'click', function (e) {
 			e.preventDefault()
-			console.log(e.srcElement)
-			console.log($(this))
 			$(this)
 			.parent()
 			.toggleClass('active')
@@ -39,28 +30,38 @@ function init() {
 		});
 	};
 	bindOperators();
+
 	// center button
 	var centerBtn = $('<div class="map_btn_wrapper btn_center"><ymaps class="ymaps-b-form-button ymaps-b-form-button_theme_grey-no-transparent-26 ymaps-b-form-button_height_26 ymaps-i-bem" role="button" unselectable="on" style="-webkit-user-select: none;"><ymaps class="ymaps-b-form-button__left"></ymaps><ymaps class="ymaps-b-form-button__content"><ymaps class="ymaps-b-form-button__text"><ymaps id="" unselectable="on" style="-webkit-user-select: none;"><ymaps><ymaps class="ymaps-b-select__title" style="display: block;">Высставить как было!</ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></div>');
-	$('#map')
-	.append(centerBtn);
-	$('#map .btn_center .ymaps-b-form-button')
-	.click(function () {
+	$('#map').append(centerBtn);
+	$('#map .btn_center .ymaps-b-form-button').click(function () {
+
+		$('#map .map_objects_menu .item').each(function(){
+			if ($(this).hasClass('active')) {
+				console.log('true')  
+			} else {
+				console.log('false')
+				$(this).find('.link').trigger('click')
+			}
+		})
+
 		myMap.setBounds(myMap.geoObjects.getBounds(), {
 			duration: 500
 		});
 	})
 	// END center button
+
 	// GeolocationButton
 	/**
-	 * Класс кнопки определения местоположения пользователя.
-	 * с помощью Geolocation API.
-	 * @see http://www.w3.org/TR/geolocation-API/
-	 * @class
-	 * @name GeolocationButton
-	 * @param {Object} params Данные для кнопки и параметры к Geolocation API.
-	 */
-	 function GeolocationButton(params) {
-	 	GeolocationButton.superclass.constructor.call(this, params);
+	* Класс кнопки определения местоположения пользователя.
+	* с помощью Geolocation API.
+	* @see http://www.w3.org/TR/geolocation-API/
+	* @class
+	* @name GeolocationButton
+	* @param {Object} params Данные для кнопки и параметры к Geolocation API.
+	**/
+	function GeolocationButton(params) {
+		GeolocationButton.superclass.constructor.call(this, params);
 		// Расширяем опции по умолчанию теми, что передали в конструкторе.
 		this.geoLocationOptions = ymaps.util.extend({
 			// Не центрировать карту.
@@ -79,43 +80,37 @@ function init() {
 	}
 	ymaps.util.augment(GeolocationButton, ymaps.control.Button, {
 		/**
-		 * Метод будет вызван при добавлении кнопки на карту.
-		 * @function
-		 * @name GeolocationButton.onAddToMap
-		 * @param {ymaps.Map} map Карта на которую добавляется кнопка.
-		 */
-		 onAddToMap: function (map, position) {
-		 	GeolocationButton.superclass.onAddToMap.apply(this, arguments);
-			// ymaps.option.presetStorage.add('geolocation#icon', {
-			// 	iconImageHref: 'man.png',
-			// 	iconImageSize: [100, 100 ],
-			// 	iconImageOffset: [0, -24]
-			// });
-    console.log(this.options)
-    this.hint = new GeolocationButtonHint(this);
+		* Метод будет вызван при добавлении кнопки на карту.
+		* @function
+		* @name GeolocationButton.onAddToMap
+		* @param {ymaps.Map} map Карта на которую добавляется кнопка.
+		*/
+		onAddToMap: function (map, position) {
+			GeolocationButton.superclass.onAddToMap.apply(this, arguments);
+			this.hint = new GeolocationButtonHint(this);
 			// Обрабатываем клик на кнопке.
 			this.events.add('click', this.onGeolocationButtonClick, this);
 		},
 		/**
-		 * Метод будет вызван при удалении кнопки с карты.
-		 * @function
-		 * @name GeolocationButton.onRemoveFromMap
-		 * @param {ymaps.Map} map Карта с которой удаляется кнопка.
-		 */
-		 onRemoveFromMap: function () {
-		 	this.events.remove('click', this.onGeolocationButtonClick, this);
-		 	this.hint = null;
-		 	ymaps.option.presetStorage.remove('geolocation#icon');
-		 	GeolocationButton.superclass.onRemoveFromMap.apply(this, arguments);
-		 },
+		* Метод будет вызван при удалении кнопки с карты.
+		* @function
+		* @name GeolocationButton.onRemoveFromMap
+		* @param {ymaps.Map} map Карта с которой удаляется кнопка.
+		*/
+		onRemoveFromMap: function () {
+			this.events.remove('click', this.onGeolocationButtonClick, this);
+			this.hint = null;
+			ymaps.option.presetStorage.remove('geolocation#icon');
+			GeolocationButton.superclass.onRemoveFromMap.apply(this, arguments);
+		},
 		/**
-		 * Обработчик клика на кнопке.
-		 * @function
-		 * @private
-		 * @name GeolocationButton.onGeolocationButtonClick
-		 * @param {ymaps.Event} e Объект события.
-		 */
-		 onGeolocationButtonClick: function (e) {
+		* Обработчик клика на кнопке.
+		* @function
+		* @private
+		* @name GeolocationButton.onGeolocationButtonClick
+		* @param {ymaps.Event} e Объект события.
+		*/
+		onGeolocationButtonClick: function (e) {
 			// Меняем иконку кнопки на прелоадер.
 			this.toggleIconImage('loader.gif');
 			// Делаем кнопку ненажатой
@@ -238,92 +233,112 @@ function init() {
 		 }
 		});
 	/**
-	 * Человекопонятное описание кодов ошибок.
-	 * @static
-	 */
-	 GeolocationButton.ERRORS = [
-	 'permission denied',
-	 'position unavailable',
-	 'timeout'
-	 ];
+	* Человекопонятное описание кодов ошибок.
+	* @static
+	*/
+	GeolocationButton.ERRORS = [
+	'permission denied',
+	'position unavailable',
+	'timeout'
+	];
+
 	/**
-	 * Класс хинта кнопки геолокации, будем использовать для отображения ошибок.
-	 * @class
-	 * @name GeolocationButtonHint
-	 * @param {GeolocationButton} btn Экземпляр класса кнопки.
-	 */
-	 function GeolocationButtonHint(btn) {
-	 	var map = btn.getMap(),
+	* Класс хинта кнопки геолокации, будем использовать для отображения ошибок.
+	* @class
+	* @name GeolocationButtonHint
+	* @param {GeolocationButton} btn Экземпляр класса кнопки.
+	*/
+	function GeolocationButtonHint(btn) {
+		var map = btn.getMap(),
 			// Позиция кнопки.
 			position = btn.options.get('position');
 			this._map = map;
 		// Отодвинем от кнопки на 35px.
 		this._position = [position.left + 35, position.top];
 	}
+
 	/**
-	 * Отображает хинт справа от кнопки.
-	 * @function
-	 * @name GeolocationButtonHint.show
-	 * @param {String} text
-	 * @returns {GeolocationButtonHint}
-	 */
-	 GeolocationButtonHint.prototype.show = function (text) {
-	 	var map = this._map,
-	 	globalPixels = map.converter.pageToGlobal(this._position),
-	 	position = map.options.get('projection')
-	 	.fromGlobalPixels(globalPixels, map.getZoom());
-	 	this._hint = map.hint.show(position, text);
-	 	return this;
-	 };
+	* Отображает хинт справа от кнопки.
+	* @function
+	* @name GeolocationButtonHint.show
+	* @param {String} text
+	* @returns {GeolocationButtonHint}
+	*/
+	GeolocationButtonHint.prototype.show = function (text) {
+		var map = this._map,
+		globalPixels = map.converter.pageToGlobal(this._position),
+		position = map.options.get('projection')
+		.fromGlobalPixels(globalPixels, map.getZoom());
+		this._hint = map.hint.show(position, text);
+		return this;
+	};
 	/**
-	 * Прячет хинт с нужной задержкой.
-	 * @function
-	 * @name GeolocationButtonHint.hide
-	 * @param {Number} timeout Задержка в миллисекундах.
-	 * @returns {GeolocationButtonHint}
-	 */
-	 GeolocationButtonHint.prototype.hide = function (timeout) {
-	 	var hint = this._hint;
-	 	if (hint) {
-	 		setTimeout(function () {
-	 			hint.hide();
-	 		}, timeout);
-	 	}
-	 	return this;
-	 };
-	 var myButton = new GeolocationButton({
-	 	data: {
-	 		image: baseImageURL + 'wifi.png',
-	 		title: 'Определить местоположение'
-	 	},
-	 	options: {
+	* Прячет хинт с нужной задержкой.
+	* @function
+	* @name GeolocationButtonHint.hide
+	* @param {Number} timeout Задержка в миллисекундах.
+	* @returns {GeolocationButtonHint}
+	*/
+
+	GeolocationButtonHint.prototype.hide = function (timeout) {
+		var hint = this._hint;
+		if (hint) {
+			setTimeout(function () {
+				hint.hide();
+			}, timeout);
+		}
+		return this;
+	};
+	var myButton = new GeolocationButton({
+		data: {
+			image: baseImageURL + 'wifi.png',
+			title: 'Определить местоположение'
+		},
+		options: {
 			// Режим получения наиболее точных данных.
 			enableHighAccuracy: true
 		}
+
+
 	});
 	// END GeolocationButton
+
+	// ИНИЦИАЦИЯ ПОЛЬЗОВАТЕЛЬСКИХ ШАБЛОНОВ ЭЛЕМЕНТОВ КАРТЫ
+	var initUserTemplates = function () {
+		var MyBalloonAccordionClass = ymaps.templateLayoutFactory.createClass(
+			'<h3>Макет</h3><p>Создан на основе шаблона.</p>'
+			);
+	};
+	// END ИНИЦИАЦИЯ ПОЛЬЗОВАТЕЛЬСКИХ ШАБЛОНОВ ЭЛЕМЕНТОВ КАРТЫ
+
+
+
+
+	// Контейнер для меню.
+	var menu = $('<ul class="map_objects_menu"/>');
 	// Перебираем все группы.
-	groups.forEach(function (group) {
+	if (markers && markers.length > 0) {
+		markers.forEach(function (group) {
 		// Пункт меню.
-		var menuItem = $('<li><a href="#">' + group.name + '</a></li>'),
-			// Коллекция для геообъектов группы.
-			collection = new ymaps.GeoObjectCollection(null, {
-				preset: group.style
-			}),
-			// Контейнер для подменю.
-			submenu = $('<ul class="submenu"/>');
+		var menuItem = $('<li class="item active"><a class="link" href="#">' + group.name + '</a></li>');
+		// Коллекция для геообъектов группы.
+		var	collection = new ymaps.GeoObjectCollection(null, {
+			preset: group.style
+		});
+		// Контейнер для подменю.
+		var	submenu = $('<ul class="submenu"/>');
 		// Добавляем коллекцию на карту.
 		myMap.geoObjects.add(collection);
 		// Добавляем подменю.
-		menuItem
-		.append(submenu)
+		menuItem.append(submenu)
 		// Добавляем пункт в меню.
 		.appendTo(menu)
 		// По клику удаляем/добавляем коллекцию на карту и скрываем/отображаем подменю.
-		.find('a')
-		.toggle(function () {
+		.find('a').toggle(function () {
 			myMap.geoObjects.remove(collection);
-			submenu.hide();
+			setTimeout(function() {
+				submenu.hide()
+			}, 400);
 		}, function () {
 			myMap.geoObjects.add(collection);
 			submenu.show();
@@ -331,107 +346,106 @@ function init() {
 		// Перебираем элементы группы.
 		group.items.forEach(function (item) {
 			// Пункт подменю.
-			var submenuItem = $('<li><a href="#">' + item.name + '</a></li>'),
-				// Создаем метку.
-				placemark = new ymaps.Placemark(item.cords, {
-					iconContent: item.iconContent,
-					hintContent: item.hintContent,
-					balloonContent: item.balloonContent
-				}, {
-					preset: group.style
-				});
-				placemark.events.add('balloonopen', function (e) {
-					console.log(e)
-					placemark.properties.set('balloonContent', "Идет загрузка данных...")
-					var result = '';
-					$.ajax({
-						url: '/getall',
-						type: 'POST',
-						data: {
-							param1: 'value1'
-						},
-						success: function (res) {
-							console.log('success')
-							console.log('req data :', this.data);
-							console.log('res data :', res.data)
-							var instructorsList = res.data;
-							result += '<ul class="instructors_dropdown">'
-							if (instructorsList.length < 1) {
-								result = 'Никого нет'
-							}
-							for (var i = 0; i < instructorsList.length; i++) {
-								console.log(instructorsList[i])
-								result += '<li class="instructor_in_dropdown"><a class="js_showSubmenu" href="/' + instructorsList[i]['имя'] + '">' + instructorsList[i]['имя'] + '</a><ul class="js_submenu hidden">'
-								for (prop in instructorsList[i]) {
-									if (
-										prop != '_id' &&
-										prop != 'pass' &&
-										prop != 'pass_check' &&
-										prop != '__v'
-										) {
-										result += '<li>' + prop + ': ' + instructorsList[i][prop] + '</li>'
+			var submenuItem = $('<li><a href="#">' + item.name + '</a></li>');
+			// Создаем метку.
+			var	placemark = new ymaps.Placemark(item.cords, {
+				iconContent: item.iconContent,
+				hintContent: item.hintContent,
+				balloonContent: item.balloonContent
+			}, {
+				preset: group.style
+			});
+			placemark.events.add('balloonopen', function (e) {
+				placemark.properties.set('balloonContent', "Идет загрузка данных...")
+				var result = '';
+				$.ajax({
+					url: '/getall',
+					type: 'POST',
+					data: {
+						resort: 'Igora (for instanse)'
+					},
+					success: function (res) {
+						var instructorsList = res;
+						result += '<ul class="instructors_dropdown">'
+						if (instructorsList.length < 1) {
+							result = 'Никого нет'
+						}
+						for (var i = 0; i < instructorsList.length; i++) {
+							result += '<li class="instructor_in_dropdown"><a class="js_showSubmenu load_info" href="#" data-userid="' + instructorsList[i]['_id'] + '" >' + instructorsList[i]['name'] + '</a><ul class="js_submenu hidden">'
+							for (prop in instructorsList[i]) {
+								if (prop === 'name' || prop === 'email' || prop === 'phone' || prop === 'online') {
+									result += '<li>' + prop + ': ' + instructorsList[i][prop] + '</li>'
 								}
 							}
-							result += '</ul></li>'
+							result += '<li class="main_user_link_container"> <a class="main_user_link" href="/users/" data-userid="' + instructorsList[i]['_id'] + '">Страница инструктора</a> </li></ul></li>'
 						}
 						result += '</ul>'
 						placemark.properties.set('balloonContent', result);
 					},
 					error: function () {
-						console.log("error");
+						placemark.properties.set('balloonContent', "Не удалось загрузить список инструкторов")
 					},
 					complete: function () {
-						console.log("complete");
 					}
 				})
+$('.instructor_in_dropdown .main_user_link')
 })
+collection.add(placemark);
 			// Добавляем метку в коллекцию.
-			collection.add(placemark);
 			// Добавляем пункт в подменю.
-			submenuItem
-			.appendTo(submenu)
+			submenuItem.appendTo(submenu)
 			// При клике по пункту подменю открываем/закрываем баллун у метки.
-			.find('a')
-			.toggle(function () {
+			.find('a').toggle(function () {
 				placemark.balloon.open();
 			}, function () {
 				placemark.balloon.close();
 			});
 		});
 });
-	// Добавляем меню в тэг BODY.
-	menu.appendTo($('body > .content'));
+	// Добавляем меню в #map.
+	menu.appendTo($('#map'));
+	$('.map_objects_menu .item .link').on({
+		click: function(e) {
+			$(this).parent().toggleClass('active')
+		}
+	})
+
 	// Выставляем масштаб карты чтобы были видны все группы.
 	myMap.setBounds(myMap.geoObjects.getBounds());
-	var initUserTemplates = function () {
-		var MyBalloonAccordionClass = ymaps.templateLayoutFactory.createClass(
-			'<h3>Макет</h3><p>Создан на основе шаблона.</p>'
-			);
-	};
-	initUserTemplates();
-	(function initControls() {
-		var myListBox = new ymaps.control.ListBox({
-			data: {
-				title: 'Выбрать город'
-			},
-			items: [
-			new ymaps.control.ListBoxItem('Москва'),
-			new ymaps.control.ListBoxItem('Новосибирск'),
-			new ymaps.control.ListBoxSeparator(),
-			new ymaps.control.ListBoxItem('Нью-Йорк')
-			]
-		});
-		myMap.controls.add('mapTools');
-		myMap.controls.add('zoomControl', {
-			top: 70,
-			left: 8
-		});
-		myMap.controls.add('routeEditor');
+} else {
+	if (console && typeof console !== undefined) {
+		console.error('NO MARKERS')
+	}
+}
+initUserTemplates();
+(function initControls() {
+	var myListBox = new ymaps.control.ListBox({
+		data: {
+			title: 'Выбрать город'
+		},
+		items: [
+		new ymaps.control.ListBoxItem('Москва'),
+		new ymaps.control.ListBoxItem('Новосибирск'),
+		new ymaps.control.ListBoxSeparator(),
+		new ymaps.control.ListBoxItem('Нью-Йорк')
+		]
+	});
+	myMap.controls.add('mapTools');
+	myMap.controls.add('zoomControl', {
+		top: 70,
+		left: 8
+	});
+	myMap.controls.add('routeEditor');
 		// myMap.controls.add('searchControl'); создать пользовательский шаблон
-		myMap.controls.add(myListBox);
+		myMap.controls.add(myListBox, {
+			top: 5,
+			right: 222
+		});
 		myMap.controls.add(myButton, {
 			top: 37,
 			left: 5
 		});
 	})()
 }
+
+
