@@ -239,21 +239,23 @@ var usserPhotoDropzone = new Dropzone(drop, {
 	} ,
 	thumbnail: function(file, dataUrl) {
 		tFile = file
+		this.currentPhotoDataUrl = dataUrl
+		console.log(this)
 		console.log('thumbnail')
 		$userPhoto.attr({
 			'src': dataUrl,
 			'width': '',
 			'height': ''
 		});
-		$.ajax({
-			url: '/uploader',
-			type: 'POST',
-			data: { userPhoto: dataUrl },
-			success: function() {console.log('success')},
-			error: function() {console.log('error')}
-		}).then(function() {
-			usserPhotoDropzone.removeAllFiles()
-		});
+		// $.ajax({
+		// 	url: '/uploader',
+		// 	type: 'POST',
+		// 	data: { userPhoto: dataUrl },
+		// 	success: function() {console.log('success')},
+		// 	error: function() {console.log('error')}
+		// }).then(function() {
+		// 	usserPhotoDropzone.removeAllFiles()
+		// });
 		console.log(this)
 		console.log(dataUrl);
 	},
@@ -266,16 +268,16 @@ var usserPhotoDropzone = new Dropzone(drop, {
 	sending: function(file) {console.log(this.options.sending)},
 	success: function(file) {console.log('Dropzone: success!')},
 	complete: function(file) {		
-		if (file.xhr.status === 200 && file.xhr.statusText == "OK") {
-			console.log('Dropzone: complete!',file.xhr.responseText )
-			// $userPhoto.attr({
-			// 	'src': file.xhr.responseText,
-			// 	'width': '',
-			// 	'height': ''
-			// })
-		} else {
-			alert(file.xhr.responseText)
-		}
+		// if (file.xhr.status === 200 && file.xhr.statusText == "OK") {
+		// 	console.log('Dropzone: complete!',file.xhr.responseText )
+		// 	// $userPhoto.attr({
+		// 	// 	'src': file.xhr.responseText,
+		// 	// 	'width': '',
+		// 	// 	'height': ''
+		// 	// })
+		// } else {
+		// 	alert(file.xhr.responseText)
+		// }
 	},
 	canceled: function(file) {console.log('Dropzone: canceled!' )},
 	maxfilesreached: function(file) {console.log('Dropzone: maxfilesreached!' )},
@@ -316,16 +318,19 @@ var usserPhotoDropzone = new Dropzone(drop, {
 		if (span) {
 			span.textContent = this.options.dictFallbackMessage;
 		}
-
-		return this.element.appendChild(this.getFallbackForm());
+		fallbackForm = this.getFallbackForm()
+		fallbackForm.elements[0].removeAttribute('undefined')
+		fallbackForm.elements[0].setAttribute('disabled','disabled')
+		fallbackForm.elements[1].setAttribute('disabled','disabled')
+		return this.element.appendChild(fallbackForm);
 		
 		//-----------------------
 	}
 });
-
 if (typeof usserPhotoDropzone.disable === 'function') {
-	// usserPhotoDropzone.disable();
+	usserPhotoDropzone.disable();
 }
+
 
 // END DROPZONE OPTIONS
 
@@ -381,52 +386,47 @@ $(function() {
 	var $mainContent 		= 	$('.content_main')
 	var $userPageWrapper 	= 	$mainContent.find('.wrapper_left');
 	var $userPage 			= 	$userPageWrapper.find('.user_page')
+	var $userInfoForm		=	$userPage.find('#userInfo')
 	var $userInfoList		=	$userPage.find('.user_info_container .user_info_list')
+	var $userInfoListAllItems =	$userInfoList.find('.user_info_content')
 	// user infolist items
 	var $userName			=	$userPage.find('.user_name')
 	var $userPhoto			=	$userPage.find('.user_photo_container .user_photo')
+	var $userPhone			=	$userInfoList.find('.user_phone')
 	var $userEmail			=	$userInfoList.find('.user_email')
 	var $userAge			=	$userInfoList.find('.user_age')
 	var $userType			=	$userInfoList.find('.user_type')
 	var $userChars			=	$userInfoList.find('.user_chars')
-	var $userMain_phrase	=	$userInfoList.find('.user_main_phrase')
-	var $userAbout_myself	=	$userInfoList.find('.user_about_myself')
+	var $userMainPhrase 	=	$userInfoList.find('.user_main_phrase')
+	var $userAboutMyself	=	$userInfoList.find('.user_about_myself')
 	var $userIdol			=	$userInfoList.find('.user_idol')
-	var $userAchievs		=	$userInfoList.find('.user_achievs')
+	var $userAchieves		=	$userInfoList.find('.user_achievs')
 	// controls
-	var $showMyPage			=	$('.mypage.item .show_userpage.link')
-	var $closeUserPage 		= 	$userPageWrapper.find('.close')
-	var $userPhotoUploader 	=	$('#user_photo_uploader');
-	var userPhotoUpInput	=	$userPhotoUploader.find('.user_photo_input')[0]
+	var $linkToMyPage		=	$('.mypage.item .show_userpage.link')
+	var $buttonEditSave		=	$userPage.find('.edit_button'); $buttonEditSave.detach();
+	var $buttonCloseUserPage= 	$userPageWrapper.find('.close')
+	var $buttonEditMyPage	=	$('.edit_my_page')
+	var $buttonSaveMyPage	=	$('.save_my_page')
+	var $fallbackFormInputs =	$('.dz-browser-not-supported .dz-fallback input')
 
-	var substitute = function(data) {
+	// functions
+	var substituteVars = function(data) {
 		console.log(data)
-		if (data.name !== undefined) 		$userName			.html(data.name)
-		if (data.photo !== undefined) 		$userPhoto			.attr('src', data.photo)
-		if (data.email !== undefined) 		$userEmail			.html(data.email)
-		if (data.type !== undefined) 		$userType			.html(data.type)
-		if (data.age !== undefined) 		$userAge			.html(data.age)
-		if (data.chars !== undefined) 		$userChars			.html(data.chars)
-		if (data.mainPhrase !== undefined) 	$userMainPhrase		.html(data.mainPhrase)
-		if (data.aboutMyself !== undefined) $userAboutMyself	.html(data.aboutMyself)
-		if (data.idol !== undefined) 		$userIdol			.html(data.idol)
-		if (data.achievs !== undefined) 	$userAchievs		.html(data.achievs)	
+		if (data['name'] !== undefined) 		$userName			.html(data['name'])
+		if (data['photo'] !== undefined) 		$userPhoto			.attr('src', data['photo'])
+		if (data['phone'] !== undefined) 		$userPhone			.val(data['phone'])
+		if (data['email'] !== undefined) 		$userEmail			.val(data['email'])
+		if (data['type'] !== undefined) 		$userType			.val(data['type'])
+		if (data['age'] !== undefined) 			$userAge			.val(data['age'])
+		if (data['chars'] !== undefined) 		$userChars			.val(data['chars'])
+		if (data['main-phrase'] !== undefined) 	$userMainPhrase		.val(data['main-phrase'])
+		if (data['about-myself'] !== undefined) $userAboutMyself	.val(data['about-myself'])
+		if (data['my-idol'] !== undefined) 		$userIdol			.val(data['my-idol'])
+		if (data['achieves'] !== undefined) 	$userAchieves		.text(data['achieves'])	
 	}
-	
-	$closeUserPage.on('click',function() {
-		$mainContent.removeClass('user_page_showed')
-	})
-
-	$(window).on('keyup',function(e) {
-		console.log(e.keyCode)
-		if (e.keyCode == 27) {
-			e.preventDefault()
-			$closeUserPage.trigger('click')
-		}
-	})
-
-	$showMyPage.on('click',function(e) {
+	var showMyPage = function(e) {
 		e.preventDefault()
+		$buttonEditSave.appendTo($userPage.find('.user_page_right'))
 		$this = $(this)
 		$.ajax({
 			url: '/user',
@@ -439,34 +439,65 @@ $(function() {
 					id: 'current_user'
 				} 
 			},
-			success: substitute,
+			success: substituteVars,
 			error: function(err) {
 				window.location.reload()
 			},
 			complite: function() {}
-		}).then(function() {
+		}).then(function(err) {
+				if (err) {
+					console.log(err)
+				}
 				$mainContent.addClass('user_page_showed')
-				// $('.wrapper_left .user_page').imagesLoaded()
-				// .always( function( instance ) {
-				// 	console.log('all images loaded');
-				// })
-				// .done( function( instance ) {
-				// 	console.log('all images successfully loaded');
-				// 	setTimeout(function() {
-				// 	},1);
-				// })
-				// .fail( function() {
-				// 	console.log('all images loaded, at least one is broken');
-				// })
-				// .progress( function( instance, image ) {
-				// 	var result = image.isLoaded ? 'loaded' : 'broken';
-				// 	console.log( 'image is ' + result + ' for ' + image.img.src );
-				// });
 
 		},function() {})
-	})
-	// show user page
-	$('#map').on('click', '.instructor_in_dropdown .load_info' , function(e) {
+	}
+	var editMyPage = function(e) {
+		console.log('edit my page!')
+		$(this).attr('class','edit_button save_my_page').text('Сохранить');
+		$userInfoListAllItems.prop('disabled', false).addClass('editable')
+		$userAchieves.css('resize','vertical')
+		if (usserPhotoDropzone.element) {
+			usserPhotoDropzone.enable();
+		} else {
+			$fallbackFormInputs.prop('disabled', false)
+		}
+	};
+	var saveMyPage = function(e) {
+		console.log('saveMyPage')
+		$(this).attr('class','edit_button edit_my_page').text('Редактировать');
+
+		if (usserPhotoDropzone.currentPhotoDataUrl) {
+			$.ajax({
+				url: '/uploader',
+				type: 'POST',
+				data: { userPhoto: usserPhotoDropzone.currentPhotoDataUrl },
+				success: function(data) {console.log('success')},
+				error: function(err) {console.log('error', err)}
+			}).then(function() {
+				usserPhotoDropzone.removeAllFiles()
+			});
+		}
+
+		$.ajax({
+			url: '/user-update',
+			type: 'POST',
+			data: { data: $userInfoForm.serializeObject() },
+			success: function(data) {console.log('success')},
+			error: function(err) {console.log('error', err)}
+		}).then(function() {});
+
+
+		$userInfoListAllItems.prop('disabled', true).removeClass('editable')
+		$userAchieves.css('resize','none')
+		if ( usserPhotoDropzone.element ) {
+			usserPhotoDropzone.disable();
+		} else {
+			$fallbackFormInputs.prop('disabled', true)
+		}
+		console.log('page saved!')
+	};
+	var loadUserPage = function(e) {
 		e.preventDefault()
 		$this = $(this)
 		$.ajax({
@@ -480,12 +511,12 @@ $(function() {
 					id: $this.data('userid')
 				} 
 			},
-			success: substitute,
+			success: substituteVars,
 			error: function(err) {},
 			complite: function() {}
 		})
-	})
-	$('#map').on('click', '.instructor_in_dropdown .main_user_link' , function(e) {
+	}
+	var showUserPage = function(e) {
 			e.preventDefault();
 			$('.wrapper_left .user_page').imagesLoaded()
 			.always( function( instance ) {
@@ -502,18 +533,72 @@ $(function() {
 				var result = image.isLoaded ? 'loaded' : 'broken';
 				console.log( 'image is ' + result + ' for ' + image.img.src );
 			});
+	}
+	var closeUserPage = function(e) {
+		$buttonEditSave.detach();
+		$mainContent.removeClass('user_page_showed')
+	}
 
+	$buttonCloseUserPage.on('click', closeUserPage)
+
+	$(window).on({
+		'keydown': function(e) {
+			// console.log('keydown: ',e)
+			switch (e.keyCode) {
+				case 9:
+					e.preventDefault();
+				break
+			} 
+		},
+		'keyup': function(e) {
+			// console.log('keyup: ',e)
+			switch (e.keyCode) {
+				case 27:
+					console.log('escape')
+					e.preventDefault()
+					$buttonCloseUserPage.trigger('click')
+				break
+				case 13:
+					console.log('enter')
+					if ($mainContent.hasClass('user_page_showed') && typeof $('.user_page .save_my_page') !== undefined && $(e.srcElement).hasClass('user_info_content')) {
+						$('.user_page .save_my_page').trigger('click')
+					}
+				break	
+			}
+		}
 	})
-	// upload user photo
-	$userPhotoUploader.submit('submit',function(e) {
- 		console.log('submit')
-		// e.preventDefault()
-		// $.ajax({
-		// 	type:'POST',
-		// 	url: '/uploader',
-		// 	data: { query: $userPhotoUploader.serializeArray()},
-		// 	success: function(data) {console.log(data)},
-		// 	error: function(err) {console.log(err)}
-		// }).then(function() {})
-	})
+	// show my page
+	$linkToMyPage.on('click', showMyPage)
+	// show user page
+	$('#map').on('click', '.instructor_in_dropdown .load_info' , loadUserPage)
+	$('#map').on('click', '.instructor_in_dropdown .main_user_link' , showUserPage)
+	// edit/save user page
+	$userPage.on('click','.edit_my_page', editMyPage)
+	$userPage.on('click','.save_my_page', saveMyPage)
 })
+
+// BACKBONE
+Backbone.history.start({pushState: true})
+
+var Workspace = Backbone.Router.extend({
+	routes: {
+		"/": 					"hello",
+		"help":                 "help",
+		"search/:query":        "search",
+		"search/:query/p:page": "search"
+	},
+	hello: function(e) {
+		console.log(e)
+	},
+	help: function(e) {
+		console.log(e)
+	},
+	search: function(query, page) {
+		console.log(query, page)
+	}
+});
+
+// END BACKBONE
+
+
+

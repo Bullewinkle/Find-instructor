@@ -19,9 +19,31 @@ var userSchema = new mongoose.Schema({
 	"photo": {
 		type: String
 	},
+	"phone": {
+		type: String,
+		unique: true
+	},
 	"online": {
 		type: Boolean
-	}
+	},
+	"age": {
+		type : String
+	},
+	"chars": {
+		type : String
+	},
+	"achieves": {
+		type : String
+	},
+	"main-phrase": {
+		type : String
+	},
+	"about-myself": {
+		type : String
+	},
+	"my-idol": {
+		type : String
+	},
 });
 
 userSchema.path('name').validate(function (val, res) {

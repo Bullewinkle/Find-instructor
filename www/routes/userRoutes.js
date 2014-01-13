@@ -105,7 +105,32 @@ module.exports = {
 			};
 		});
 	},
-	setPhoto: function(req, res) {
+	update: function(req, res, err) {
+		if (req.session.userID) {
+			var query = req.session.userID
+			var newData = req.body.data
+			console.log(newData)
+			User.findByIdAndUpdate(query, {$set: { 
+				'email': newData['email'],
+				'phone': newData['phone'],
+				'type': newData['type'],
+				'age': newData['age'],
+				'chars': newData['chars'],
+				'achieves': newData['achieves'],
+				'main-phrase': newData['main-phrase'],
+				'about-myself': newData['about-myself'],
+				'my-idol': newData['my-idol'],
+			} }, {}, function (err, doc) {
+				if (err) throw err;
+				console.log(doc)
+				res.send('ok')
+			})
+		} else {
+			throw err;
+		}
+
+	},
+	setPhoto: function(req, res, err) {
 		
 		// imageMagic.readMetadata(req.files.userPhoto, function(err, metadata){})
 

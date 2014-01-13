@@ -10,9 +10,11 @@ html(lang="en")
 		link(rel="stylesheet", href="css/normalize.css")
 		link(rel="stylesheet", href="css/style.css")
 		link(href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAXOMAACx1gABAAAAAgAAAAKSsQADAAAAAYikAAACAwABAgMAALPZAAICAwAAPFAAAIqnAACv1AAABAYAAZa3AAEpMwAERVgAABYeAACu1wAAAAEAAgABAAAYIQAAb4gAAK3SAAGt0gAAFBwAAKnNAACv1QAABAcAApK7AAEvPAABAAIAAwACAACnywAArdMAAAIFAAGt0wABLToAADhNAAKv1gAAKTUAAAEAAAEBAAAAstYAAbHZAACu0QAArdQAAJGvAAEnMwAAM0MAAbDUAAE/UwAAr9cAAxAZAAGZugAALDYAAW2IAACPrQAArtIAAa7SAACbvQABlbUAAK3VAAAFBwABkbAAALDVAAAwPAAAjasAAAECAAEBAgABZ4EAADI/AAITGgACMj8AAK7TAAADBQAFMj8AAC46AACt1gAAi6kAAmyEAAGqzgAAAgAAAQIAAACHpAABLDgAAAMGAACu1AABrtQAAWmFAAAzRgAGdY0AAK/SAACJqAAEd5AAAKjNAACu1QAADxcAAJ7AAAGw2AAAKjcABLDYAACz2AAErdAAADVKAACu1gAAjKkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGh9JCQAAAAAAAAAAAAAaGUwxSQgACQAAAAAAABoaHRk8O0QIAAAJCQAAAAAaHQIOWUVPCRYhLAkAAAAaFGsUQFBROQsGFVRVCQAAWiYkGho9X2YLAwArFUYAGiRMPC8vXgcRCBUDBCIVCVZWDWxFO0JdThcTG0o3YwkyMipXJyBLElJgARg6W0hIAEdGCAgIQTMFaVMcYWEjYgAAAAAAAyVcPzQwWllQMGIAAAAAAANNahA0YlpZFGIAAAAAAAMDWCg4LTYpQ2IAAAAAAAADAA8MPmhlZ2JiAAAAAAAAAAAeNWQKLmIAAAAAAAAAAAAAADVkYgAAAAAAAPw/AADwDwAAwAMAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAEAAMADAADAAwAA8A8AAPw/AAA=", rel="icon", type="image/x-icon")
-		script(src="js/initmap.js")
-		script(src="js/dropzone.js")
+		script(src="js/underscore-min.js")
+		script(src="js/backbone-min.js")
 		script(src="js/imagesloaded.min.js")
+		script(src="js/dropzone.js")
+		script(src="js/initmap.js")
 		script 
 			| var isAuthorised = '#{isAuthorised}';
 
@@ -73,45 +75,41 @@ html(lang="en")
 				.user_page.cf
 					.user_page_left
 						.user_photo_container
-							img.user_photo(src="/uploads/defaults/10.png" alt="")
-							.fallback
-								form.fallback_uploader(action="/uploader", enctype="multipart/form-data", method="post")
-									p Изменить изображение:
-									input(type="file", name="userPhoto", multyple="false")
-									input(type="submit", value="Отправить")
-								//- input(type="submit", value="Upload!")
+							img.user_photo(src="/uploads/defaults/10.png", alt="")
 					.user_page_right
-						.user_name не указано
+						.user_name
 						.user_info_container
-							ul.user_info_list
-								li.user_info_item.cf
-									span.user_info_label email: 
-									span.user_info_content.user_email не указано
-								li.user_info_item.cf
-									span.user_info_label Тип: 
-									span.user_info_content.user_type не указано
-								li.user_info_item.cf
-									span.user_info_label Возраст: 
-									span.user_info_content.user_age не указано
-								li.user_info_item.cf
-									span.user_info_label Личные качества: 
-									span.user_info_content.user_chars не указано
-								li.user_info_item.cf
-									span.user_info_label Главное в горнолыжном спорте: 
-									span.user_info_content.user_main_phrase не указано
-								li.user_info_item.cf
-									span.user_info_label О себе: 
-									span.user_info_content.user_about_myself не указано
-								li.user_info_item.cf
-									span.user_info_label Кумир горнолыжного спорта: 
-									span.user_info_content.user_idol не указано
-								li.user_info_item.cf
-									span.user_info_label Достижения: 
-									span.user_info_content.user_achievs
-										ul
-											li -Мастер спорта
-											li -Кубок за 1е место в чемпионате мира по сноубордингу 2013 (фристайл) 
-											li -2е мето на кубке Европы по сноубордингу 2012 (слалом)
+							form#userInfo(method="POST", action="/user-update")
+								ul.user_info_list
+									li.user_info_item.cf
+										label.user_info_label(for="email") E-mail: 
+										input.user_info_content.user_email(type="text",name="email",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="phone") Телефон: 
+										input.user_info_content.user_phone(type="text",name="phone",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="type") Тип: 
+										input.user_info_content.user_type(type="text",name="type",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="age") Возраст: 
+										input.user_info_content.user_age(type="text",name="age",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="chars") Личные качества: 
+										input.user_info_content.user_chars(type="text",name="chars",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="main-phrase") Главное в горнолыжном спорте: 
+										input.user_info_content.user_main_phrase(type="text",name="main-phrase",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="about-myself") О себе: 
+										input.user_info_content.user_about_myself(type="text",name="about-myself",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="my-idol") Кумир горнолыжного спорта: 
+										input.user_info_content.user_idol(type="text",name="my-idol",disabled="disabled", placeholder="-", value="")
+									li.user_info_item.cf
+										label.user_info_label(for="achieves") Достижения: 
+										textarea.user_info_content.user_achievs(name="achieves", disabled="disabled", placeholder="-")
+						button.edit_button.edit_my_page Редактировать
+
 					.calendar
 					.bottom_space
 				button.close Закрыть

@@ -1,5 +1,7 @@
-html, body , #map { width: 100%; height:100%;overflow-x: hidden;}
-body {min-width: 950px;
+html, body , #map { width: 100%; height:100%;overflow: hidden;}
+body {
+    min-width: 950px;
+    color:#333;
     -webkit-transition: box-shadow 1.2s ease;
     -moz-transition: box-shadow 1.2s ease;
     -ms-transition: box-shadow 1.2s ease;
@@ -34,6 +36,10 @@ body.authorised .login.item .link {display: none;}
 .req_res.success {color:green; }
 
 .no_internet {position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;height: 130px; width: 55%; z-index: 100; line-height: 26px; text-align: center;  color: tomato; }
+
+.editable {
+    border-bottom: 1px dashed springgreen;
+}
 /*END SYSTEM*/
 
 /*ALL*/
@@ -111,19 +117,48 @@ ul {
 /*END MAP*/
 
 /*USERPAGE*/
-.content_main > .wrapper_left > .user_page {margin: 0 auto; position: relative; padding: 20px 120px 0 40px; }
+.content_main > .wrapper_left > .user_page {margin: 0 auto; position: relative; padding: 20px 120px 20px 40px; }
+.content_main > .wrapper_left .edit_button {position: absolute;right: 120px;top: 20px;}
 .content_main > .wrapper_left .user_page_left {float: left; width: 36%; padding: 0 4% 0 0; max-width: 400px;}
 .content_main > .wrapper_left .user_page_right {float: left; width: 60%; max-width: 640px;}
-.content_main > .wrapper_left .user_photo_container {}
-.content_main > .wrapper_left .user_photo {}
 .content_main > .wrapper_left .user_name {font: 600 20px/24px Arial; margin: 0 0 10px 0;}
 .content_main > .wrapper_left .user_info {}
 .content_main > .wrapper_left .user_info_list {margin: 0; padding: 0;}
 .content_main > .wrapper_left .user_info_item {}
-.content_main > .wrapper_left .user_info_label {float: left;width: 50%;}
-.content_main > .wrapper_left .user_info_content {float: left;width: 48%;padding: 0 0 0 2%;}
+.content_main > .wrapper_left .user_info_label {float: left;width: 44%;}
+.content_main > .wrapper_left .user_info_content {
+outline: none;
+border: none;
+border-radius: 0;
+box-shadow: none;
+background: none;
+float: left;
+width: 48%;
+padding: 0 0 3px 2px;
+margin: 0 0 0 1.5%;
+margin-bottom: 4px;
+}
+.content_main > .wrapper_left .user_info_content.editable {padding-bottom: 2px; border-bottom: 1px dashed tomato; }
 .content_main > .wrapper_left .calendar {}
 .content_main > .wrapper_left > .close {position: absolute; bottom: 0; background: tomato; outline: none; border: 1px solid; width: 100px; height: 100%; right: 0; z-index: 999999; }
+button[disabled], html input[disabled] {
+    color: #333;
+}
+
+.user_info_content.user_photo_container {}
+.user_info_content.user_photo {}
+.user_info_content.user_phone {}
+.user_info_content.user_email {}
+.user_info_content.user_age {}
+.user_info_content.user_type {}
+.user_info_content.user_chars {}
+.user_info_content.user_main_phrase {}
+.user_info_content.user_about_myself {}
+.user_info_content.user_idol {}
+.user_info_content.user_achievs {
+    resize: none;
+    max-height: 600px;
+}
 
 /*END USERPAGE*/
 

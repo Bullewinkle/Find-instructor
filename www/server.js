@@ -121,6 +121,11 @@ var routes = {
 // base
 app.get('/', routes.base.welcome);
 app.post('/uploader', encoding, routes.base.upload);
+
+app.get('/user/:id?', function(req, res){
+	User.findById()
+  console.log(req.route);
+});
 // app.post('/uploader', routes.base.upload);
 
 //user
@@ -129,6 +134,7 @@ app.post('/signin', routes.user.signin);
 app.post('/signout', routes.user.signout)
 app.post('/getall', routes.user.getall);
 app.post('/user', routes.user.getUser);
+app.post('/user-update', routes.user.update);
 app.post('/setphoto', routes.user.setPhoto)
 //marker 
 app.post('/getmarks', routes.marker.getmarks)
@@ -163,27 +169,30 @@ function encoding(req, res, next) {
 // END MIDLEWEAR
 
 
-var db = mongoose.connection;
-db.on('connecting', function() {});
-db.on('error', function(error) {console.error('Error in MongoDb connection: ' + error); 
-	// mongoose.disconnect();
-});
-db.on('connected', function() {});
-db.once('open', function() {console.log('MongoDB connection opened!'); });
-db.on('reconnected', function () {console.log('MongoDB reconnected!'); });
-db.on('disconnected', function() {
-	console.log('MongoDB disconnected!');
-	mongoose.connect(config.mongo.url,{server: { auto_reconnect: true }}, function (err) {
-		if (err) throw err;
-		app.listen(app.get('port'));
-	});
-});
-
-mongoose.connect(config.mongo.url,{server: { auto_reconnect: true }}, function (err) {
+mongoose.connect(config.mongo.url,{
+	server: { 
+		auto_reconnect: true,
+		socketOptions: {
+			bufferSize: 2000,
+			keepAlive: -1,
+		}
+	},
+}, function (err) {
 	if (err) throw err;
 	app.listen(app.get('port'));
 });
 
+var db = mongoose.connection;
+
+console.log('db: ',db)
+console.log('mongoose: ',mongoose)
+
+db.on('connecting', function() {});
+db.on('error', function(error) {console.error('Error in MongoDb connection: ' + error); });
+db.on('connected', function() {});
+db.once('open', function() {console.log('MongoDB connection opened!'); });
+db.on('reconnected', function () {console.log('MongoDB reconnected!'); });
+db.on('disconnected', function() {console.log('MongoDB disconnected!'); });
 
 
 
