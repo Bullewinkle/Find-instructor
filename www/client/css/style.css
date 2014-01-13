@@ -110,10 +110,11 @@ ul {
 
 /*MAP*/
 #map { position: relative; float: left; top: 0; left: 0;min-height: 100%;width: 33.334%; overflow: hidden;margin: 0;}
-.ymaps-map.ymaps-i-ua_js_yes.visible {max-height: 100%; max-height: 100%;}
-.ymaps-glass-pane.ymaps-events-pane {-webkit-box-shadow: 0 0 360px 60px #000 inset; -moz-box-shadow: 0 0 360px 60px #000 inset; box-shadow: 0 0 360px 60px #000 inset; }
-.map-button {width: 100px; height: 100px; background: red; }
-.map-button-selected {width: 100px; height: 100px;background: green;}
+#map .ymaps-map.ymaps-i-ua_js_yes.visible {max-height: 100%; max-height: 100%;}
+#map .ymaps-glass-pane.ymaps-events-pane {-webkit-box-shadow: 0 0 360px 60px #000 inset; -moz-box-shadow: 0 0 360px 60px #000 inset; box-shadow: 0 0 360px 60px #000 inset; }
+#map .map-button {width: 100px; height: 100px; background: red; }
+#map .map-button-selected {width: 100px; height: 100px;background: green;}
+#map .ymaps-copyrights-pane {display: none;}
 /*END MAP*/
 
 /*USERPAGE*/
@@ -127,21 +128,21 @@ ul {
 .content_main > .wrapper_left .user_info_item {}
 .content_main > .wrapper_left .user_info_label {float: left;width: 44%;}
 .content_main > .wrapper_left .user_info_content {
-outline: none;
-border: none;
-border-radius: 0;
-box-shadow: none;
-background: none;
-float: left;
-width: 48%;
-padding: 0 0 3px 2px;
-margin: 0 0 0 1.5%;
-margin-bottom: 4px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    float: left;
+    width: 48%;
+    padding: 0 0 3px 2px;
+    margin: 0 0 0 1.5%;
+    margin-bottom: 4px;
 }
 .content_main > .wrapper_left .user_info_content.editable {padding-bottom: 2px; border-bottom: 1px dashed tomato; }
 .content_main > .wrapper_left .calendar {}
 .content_main > .wrapper_left > .close {position: absolute; bottom: 0; background: tomato; outline: none; border: 1px solid; width: 100px; height: 100%; right: 0; z-index: 999999; }
-button[disabled], html input[disabled] {
+button[disabled], html input[disabled], textarea[disabled] {
     color: #333;
 }
 
@@ -353,8 +354,8 @@ button[disabled], html input[disabled] {
 
 /*SCROLLBAR*/
 ::-webkit-scrollbar              {
-     /* 1 */ 
-    width: 8px;
+   /* 1 */ 
+   width: 8px;
 }
 ::-webkit-scrollbar-button       { /* 2 */ }
 ::-webkit-scrollbar-track {
@@ -370,6 +371,6 @@ button[disabled], html input[disabled] {
 ::-webkit-scrollbar-corner       { /* 6 */ }
 ::-webkit-resizer                { /* 7 */ }
 
- 
+
 /*END SCROLLBAR*/
 
