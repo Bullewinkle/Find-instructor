@@ -2,7 +2,7 @@ require('node-monkey').start({
 	host: "localhost", 
 	port:"3000"
 }); 
-
+console.log('start')
 // Main dependencies
 GLOBAL.lodash = require('lodash');
 GLOBAL.mongoose = require('mongoose');
