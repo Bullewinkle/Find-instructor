@@ -1,0 +1,22 @@
+{
+	"name": "find-instructor",
+	"description": "hello world test app",
+	"version": "0.0.1",
+	"dependencies": {
+		"lodash": "",
+		"express": "",
+		"mongoose": "",
+		"connect-mongo": "",
+		"pwd": "",
+		"imagemagick": "",
+		"node-monkey": "",
+		"jade": ""
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"main": "config.js",
+	"devDependencies": {},
+	"author": "",
+	"license": "BSD-2-Clause"
+}
